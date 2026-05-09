@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talavera Nueva Ecija - Tourist Spots</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- 🔥 FAVICONS - COMPLETE SET -->
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" type="favicon.png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="favicon.png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <!-- Android Chrome -->
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <!-- 🔥 END FAVICONS -->
+    
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-mountain"></i>
+                <span>Talavera Tourism</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#destinations" class="nav-link">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Discover Talavera, Nueva Ecija</h1>
+            <p>Explore the hidden gems of Talavera with amazing tourist spots!</p>
+            <a href="#destinations" class="cta-button">Explore Now</a>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <h2 class="section-title">Top Tourist Spots</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+                <button class="filter-btn" data-filter="historical">Historical</button>
+                <button class="filter-btn" data-filter="adventure">Adventure</button>
+            </div>
+            <div class="destinations-grid" id="destinationsGrid">
+                <!-- TOURIST SPOTS - EDITABLE CONTENT HERE -->
+                
+                <!-- 1. Talavera Church -->
+                <div class="destination-card" data-category="historical">
+                    <div class="card-image">
+                        <img src="sanisidroparishchurch.jpg" alt="Diocesan Shrine and Parish of San Isidro Labrador ">
+                        <div class="overlay">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Diocesan Shrine and Parish of San Isidro Labrador </h3>
+                        <p>Diocesan Shrine and Parish of San Isidro Labrador of the Roman Catholic Diocese of  Cabanatuan was established on 1846. It is located in Brgy. Maestrang Kikay, Municipality of Talavera, Province of Nueva Ecija. The Parish Fiesta is celebrated every 15th day of May.</p>
+                        <div class="card-footer">
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> Maestrang Kikay</span>
+                            <button class="view-more" onclick="openModal(1)">View More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Talavera Municipal hall -->
+                <div class="destination-card" data-category="historical">
+                    <div class="card-image">
+                        <img src="municipality.jpg" alt="Municipal Hall">
+                        <div class="overlay">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Talavera Municipal Hall</h3>
+                        <p>The Talavera Municipal Hall, also known as the Executive Building, is a central government office located in Talavera, Nueva Ecija. It serves as the administrative hub for the municipality and is situated near the government office Tourism Office, as well as the MSWDO & Mun. Trial Court. </p>
+                        <div class="card-footer">
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> Poblacion</span>
+                            <button class="view-more" onclick="openModal(9)">View More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Mariah Cali Farm & Resort-Events, Hotel & Restaurant -->
+                <div class="destination-card" data-category="adventure">
+                    <div class="card-image">
+                        <img src="mariahcali.jpg" alt="Mariah Cali Farm & Resort-Events, Hotel & Restaurant">
+                        <div class="overlay">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Mariah Cali Farm & Resort-Events, Hotel & Restaurant</h3>
+                        <p>Mariah Cali Farm & Resort is a guest house located in Talavera, Nueva Ecija, Philippines. It is situated near the sports venue Cabubulaonan Gym and the town Llanera. The resort offers a serene environment with greenery and a homey vibe, making it an ideal place for a vacation with family, friends, or loved ones. The resort is known for its affordable and convenient attractions, ensuring a memorable experience for guests.</p>
+                        <div class="card-footer">
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> Mariah Cali Resort, Cabubulaunan</span>
+                            <button class="view-more" onclick="openModal(3)">View More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Crystal Waves Hotel and Resort -->
+                <div class="destination-card" data-category="nature">
+                    <div class="card-image">
+                        <img src="crystalwaves.jpg" alt="Crystal Waves Resort">
+                        <div class="overlay">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Crystal Waves Resort</h3>
+                        <p>Luxurious beachfront resort with crystal-clear pools, modern amenities, and stunning ocean views. Perfect for relaxation and family getaways.</p>
+                        <div class="card-footer">
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> Dinarayat, Talavera, Nueva Ecija</span>
+                            <button class="view-more" onclick="openModal(4)">View More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. DVF Dairy Farm -->
+                <div class="destination-card" data-category="historical">
+                    <div class="card-image">
+                        <img src="dvfmilk.jpg" alt="DVF Dairy Farm">
+                        <div class="overlay">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>DVF Dairy Farm</h3>
+                        <p>DVF Dairy Farm is a family-run business located in Talavera, Nueva Ecija, approximately 130 km north of Manila. It specializes in carabao's milk, which is considered more nutritious and profitable for farmers compared to cow's milk. The farm is situated in a region known for its abundant forage, ensuring that the carabaos are well-fed, which contributes to the high quality of the milk produced.</p>
+                        <div class="card-footer">
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> Poblacion Sur</span>
+                            <button class="view-more" onclick="openModal(5)">View More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. RM Farm House Resort-->
+                <div class="destination-card" data-category="adventure">
+                    <div class="card-image">
+                        <img src="rmresort.webp" alt="RM Farm House Resort">
+                        <div class="overlay">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>RM Farm House Resort</h3>
+                        <p>RM Farm House Resort, Homestead I, talavera, nueva ecija is located in Talavera, Nueva Ecija. RM Farm House Resort, Homestead I, talavera, nueva ecija is working in Other accommodation activities.</p>
+                        <div class="card-footer">
+                            <span class="location"><i class="fas fa-map-marker-alt"></i>Homestead 1</span>
+                            <button class="view-more" onclick="openModal(6)">View More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Jab's Cafe -->
+                <div class="destination-card" data-category="nature">
+                    <div class="card-image">
+                        <img src="jabscafe.jpg" alt="Jab's Cafe">
+                        <div class="overlay">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Jab's Cafe</h3>
+                        <p>Cozy cafe serving delicious coffee, pastries, and local delicacies in a relaxing ambiance. Perfect spot for hangouts and Instagram-worthy photos.</p>
+                        <div class="card-footer">
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> San Pascual, Talavera, Nueva Ecija</span>
+                            <button class="view-more" onclick="openModal(7)">View More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="destinationModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalBody">
+                <!-- Dynamic content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Talavera</h2>
+            <p>Talavera, Nueva Ecija is a municipality rich in natural beauty, history, and culture. Visit our amazing tourist spots!</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Talavera Tourism Office | tourism@talavera.gov.ph | (044) 123-4567</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Talavera Nueva Ecija Tourism. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
